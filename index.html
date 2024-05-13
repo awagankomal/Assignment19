@@ -45,29 +45,6 @@
             color: rgb(39, 39, 75);
         }
 
-        .recent_movies_card_container2 {
-            background-color: #DCD9D4;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
-            background-blend-mode: soft-light, screen;
-            height: 420px;
-            display: flex;
-            justify-content: space-between;
-            align-items: centre;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .popular_movies_card_container {
-            background-image: linear-gradient(to top, #373e9b 0%, white 100%);
-            height: 1300px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 10px;
-            align-items: center;
-        }
-
         .time_travel_movie_card_container {
             background-image: linear-gradient(to top, #337cc4 0%, white 100%);
             height: 700px;
@@ -102,6 +79,12 @@
 
         }
 
+        .img_stye {
+            height: 340px;
+            border-radius: 5px;
+            
+        }
+
         .btn {
             background-color: black;
             color: white;
@@ -112,22 +95,148 @@
             font-size: 20px;
         }
 
-        .action_movie {
-            background-color: linear-gradient(to top, #91bfec 0%, white 100%);
-            height: 300px;
-            width: 900px;
+
+
+        /* Mobile Devices */
+
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+            .recent_movies_card_container1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 50%;
+                padding: 20px;
+                margin: 50px;
+                margin-top: 20px;
+                padding-top: 10px;
+                margin-bottom: 50px;
+                width: 60%;
+
+
+            }
+
+            .movie_card {
+
+                height: 250px;
+                border: none;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-radius: 2px;
+                box-shadow: 2px 2px 2px 1px rgb(32, 32, 32);
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 30px;
+                width: 205px
+            }
+
+            .img_style {
+                height: 200px;
+                width: 205px;
+                
+                
+            }
+            .img_visible{
+                display: none;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+            .time_travel_movie_card_container {
+                display: flex;
+                
+            }
+            .holywood_movie_card {
+                height: 400px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .movie_names {
+                margin-left: 10px;
+                font-style: bold;
+                font-size: 20px;
+                text-align: start;
+                color: rgb(19, 14, 14);
+            }
+
+            .movie_type {
+                font-size: 15px;
+                margin-left: 15px;
+                text-align: start;
+                font-style: normal;
+                color: rgb(39, 39, 75);
+            }
         }
 
-        .bright_movie_card {
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-            box-shadow: 2px 2px 2px 2px rgb(141, 123, 123);
-            cursor: pointer;
-            height: 298px;
-            width: 900px;
-            display: flex;
-            justify-content: end;
+        /* Tablet Devices */
+
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+
+            .recent_movies_card_container1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                height: 840px;
+                padding: 100px;
+                margin: 70px;
+                margin-top: 20px;
+                padding-top: 20px;
+                margin-bottom: 40px;
+                width: 60%;
+
+            }
+
+            .movie_card {
+
+                height: 300px;
+                border: none;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-radius: 2px;
+                box-shadow: 2px 2px 2px 1px rgb(32, 32, 32);
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 30px;
+                width: 205px
+            }
+
+            .img_style {
+                height: 240px;
+                width: 205px;
+
+            }
+
+            .holywood_movie_card {
+
+                border-radius: 3px;
+                box-shadow: 2px 2px 2px 2px rgb(141, 123, 123);
+                cursor: pointer;
+                height: 298px;
+                width: 800px;
+                display: flex;
+                margin-top: 30px;
+            }
+
+            .btn {
+
+                margin-top: 10px;
+                padding: 10px 20px;
+                border: 1px solid white;
+                font-size: 15px;
+
+            }
+
+
+        }
+
+        /* Dekstop device */
+
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            /* normal, already defined css properties applicable here*/
         }
     </style>
 </head>
@@ -137,144 +246,80 @@
     <div class="recent_movies_card_container1">
 
         <div class="movie_card">
-            <img src="Images/shrikanth_movie_img.jpg" alt="Srikanth Movie poster" height="340px"
-                style="border-radius: 5px;" /><br />
+            <img src="Images/shrikanth_movie_img.jpg" alt="Srikanth Movie poster" class="img_style"
+                height="340px" /><br />
             <span class="movie_names">Srikanth</span> <br />
             <span class="movie_type">Biography/Drama</span><br />
         </div>
 
         <div class="movie_card">
-            <img src="Images/nach_g_ghuma_movie_img.jpg" alt="Nach G Ghuma Movie poster" height="340px"
-                style="border-radius: 5px;" /><br />
+            <img src="Images/nach_g_ghuma_movie_img.jpg" alt="Nach G Ghuma Movie poster" class="img_style"
+                height="340px" /><br />
             <span class="movie_names">Naach Ga Ghuma</span><br />
             <span class="movie_type">Comedy/Drama/Family</span><br />
         </div>
 
         <div class="movie_card">
-            <img src="Images/kingdom_planet_of_Apes_movie_img.jpg" width="240px"
-                alt="Kingdom of the planest of Apes Movie poster" height="340px" style="border-radius: 5px;" /><br />
-            <span class="movie_names">Kingdom of the planest of the<br /> </span>
-            <span class="movie_names">Apes</span><br />
-            <span class="movie_type">Action/Adventure/Sci-Fi</span><br />
+            <img src="Images/maidaan_movie_img.jpg" alt="Maidan Movie poster" class="img_style" height="340px" /><br />
+            <span class="movie_names">Maidaan</span><br />
+            <span class="movie_type">Drama/Sports</span><br />
         </div>
 
         <div class="movie_card">
-            <img src="Images/juna_furniture_movie_img.jpg" alt="Juna Furniture Movie poster" height="340px"
-                style="border-radius: 5px;" /><br />
+            <img src="Images/juna_furniture_movie_img.jpg" alt="Juna Furniture Movie poster" class="img_style"
+                height="340px" /><br />
             <span class="movie_names">Juna Furniture</span><br />
             <span class="movie_type">Drama/Family</span> <br />
         </div>
 
-        <div class="movie_card">
-            <img src="Images/maidaan_movie_img.jpg" alt="Maidaan Movie poster" height="340px" /><br />
-            <span class="movie_names">Maidaan</span><br />
-            <span class="movie_type">Biography/Drama/Sports</span><br />
-        </div>
-
-    </div>
-
-    <div class="recent_movies_card_container2">
-
-        <div class="movie_card">
-            <img src="Images/sudhir_poster.jpg" alt="Swargandharv Sudhir Phadake poster" height="340px"
-                style="border-radius: 5px;" /><br />
-            <span class="movie_names">Swargandharv Sudhir Phadake</span> <br />
-            <span class="movie_type">Biography/Drama/Musical</span><br />
-        </div>
-
-        <div class="movie_card">
-            <img src="Images/the_boy_and_horon.jpg" alt="the_boy_and_heron Movie poster" height="340px"
-                style="border-radius: 5px;" /><br />
-            <span class="movie_names">The Boy and the Heron</span><br />
-            <span class="movie_type">Adventure/Anime/Drama</span><br />
-        </div>
-
-        <div class="movie_card">
-            <img src="Images/godzillaa.jpg" width="240px" alt="godzillaa x Gong poster" height="340px"
-                style="border-radius: 5px;" /><br />
-            <span class="movie_names">Godzilla x Kong: The New Empire </span><br />
-            <span class="movie_type">Action/Sci-Fi/Thriller</span><br />
-        </div>
-
-        <div class="movie_card">
-            <img src="Images/fall_guy.jpg" alt="fall_guy Movie poster" height="340px"
-                style="border-radius: 5px;" /><br />
-            <span class="movie_names">The Fall guy"</span><br />
-            <span class="movie_type">Action/Comedy</span> <br />
-        </div>
-
-        <div class="movie_card">
-            <img src="Images/maidaan_movie_img.jpg" alt="Maidaan Movie poster" height="340px" /><br />
-            <span class="movie_names">Maidaan</span><br />
-            <span class="movie_type">Biography/Drama/Sports</span><br />
-        </div>
-
-    </div>
-  
-    <div class="popular_movies_card_container">
-        <h1 style="text-align: center; color: rgb(3, 3, 73);">Time Travel HollyWood Movies </h1>
-        <div class="time_travel_movie_card_container">
-            <div class="holywood_movie_card">
-                <img src="Images/bladerunner_poster.jpg" alt="movie card1" width="600px" height="298px" />
-                <div class="movie_details">
-                    <h2>BLADE RUNNER</h2>
-                    <span style="color: rgb(17, 17, 230);">(1982) SCI-FI,THRILLER</span>
-                    <br /><br />
-                    <p style="font-size: 16px;">A blade runner must pursue and try to terminate four replicants who
-                        stole a ship
-                        in
-                        space and have returned to
-                        earth to find their creator. </p>
-                    <button class="btn">
-                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
-                        &nbsp;&nbsp;&nbsp;Watch Trailor
-                    </button>
-                </div>
-            </div>
-
-            <div class="holywood_movie_card">
-                <img src="Images/backToFuture_poster.jpg" alt="movie card1" width="600px" height="298px" />
-                <div class="movie_details">
-                    <h2>BACK TO THE FUTURE</h2>
-                    <span style="color: rgb(17, 17, 230);">(1985) ADVENTURE,COMEDY,SCI-FI,</span>
-                    <br /><br />
-                    <p style="font-size: 16px;">Marty McFly, a 17-year-old high school student, is accidentally sent 30
-                        years into
-                        the past ina time-travelling DeLorean invented by his close friend,the maverick scientist Doc
-                        Brown.</p>
-                    <button class="btn">
-                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
-                        &nbsp;&nbsp;&nbsp;Watch Trailor
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="action_movie">
-            <h1 style="text-align: center; color: rgb(3, 3, 73);">Action Movies</h1>
-            <div class="bright_movie_card">
-                <img src="Images/bright_black_img.jpg" alt="Bright movie card" width="500px" height="298px" />
-                <div class="movie_details">
-                    <h2>Bright</h2>
-                    <span style="color: rgb(17, 17, 230);">(1985) ACTION,CRIME,FATANSY</span>
-                    <br /><br />
-                    <p style="font-size: 16px;">Setin a world where fatansy creatures live side by side with humans. A
-                        human cop
-                        is
-                        forced towork with an Orc to find a weapon everyone is prepared to kill for.</p>
-                    <button class="btn">
-                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
-                        &nbsp;&nbsp;&nbsp;Watch Trailor
-                    </button>
-
-                </div>
-            </div>
-        </div>
 
     </div>
 
 
+
+
+    <h1 style="text-align: center; color: rgb(3, 3, 73);">Time Travel HollyWood Movies </h1>
+    <div class="time_travel_movie_card_container">
+        <div>
+            <div class="img_visible">
+            <img src="Images/bladerunner_poster.jpg" alt="movie card1" width="600px" height="298px" />
+            </div>
+            <div class="movie_details">
+                <h2>BLADE RUNNER</h2>
+                <span style="color: rgb(17, 17, 230);">(1982) SCI-FI,THRILLER</span>
+                <br /><br />
+                <p style="font-size: 16px;">A blade runner must pursue and try to terminate four replicants who
+                    stole a ship
+                    in
+                    space and have returned to
+                    earth to find their creator. </p>
+                <button class="btn">
+                    <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
+                    &nbsp;&nbsp;&nbsp;Watch Trailor
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="img_visible">
+            <img src="Images/backToFuture_poster.jpg" alt="movie card1" width="600px" height="298px" />
+            </div>
+            <div class="movie_details">
+                <h2>BACK TO THE FUTURE</h2>
+                <span style="color: rgb(17, 17, 230);">(1985) ADVENTURE,COMEDY,SCI-FI,</span>
+                <br /><br />
+                <p style="font-size: 16px;">Marty McFly, a 17-year-old high school student, is accidentally sent 30
+                    years into
+                    the past ina time-travelling DeLorean invented by his close friend,the maverick scientist Doc
+                    Brown.</p>
+                <button class="btn">
+                    <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
+                    &nbsp;&nbsp;&nbsp;Watch Trailor
+                </button>
+            </div>
+        </div>
+    </div>
 
 </body>
-
 
 </html>
