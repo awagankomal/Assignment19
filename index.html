@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-       <title>Responsive ShowMovies Webpage</title>
-       <style>
 
-       </style>
-    </head>
-    <body>
-        
-    </body>
-    
+<head>
+    <title>Responsive ShowMovies Webpage</title>
+    <style>
+        .body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .recent_movies_card_container {
+            background-color: #DCD9D4;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+            background-blend-mode: soft-light, screen;
+            height: 420px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: centre;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .movie_card {
+            height: 400px;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 2px 2px 2px 1px rgb(138, 136, 136);
+        }
+
+        .movie_names {
+            margin-left: 15px;
+            font-style: bold;
+            font-size: medium;
+            text-align: start;
+            color: rgb(19, 14, 14);
+        }
+
+        .movie_type {
+            font-size: medium;
+            margin-left: 15px;
+            text-align: start;
+            font-style: normal;
+            color: rgb(39, 39, 75);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: rgb(3, 3, 73);">Recommended Movies</h1>
+    <div class="recent_movies_card_container">
+
+        <div class="movie_card">
+            <img src="Images/shrikanth_movie_img.jpg" alt="Srikanth Movie poster" height="340px"
+                style="border-radius: 5px;" /><br />
+            <span class="movie_names">Srikanth</span> <br />
+            <span class="movie_type">Biography/Drama</span><br />
+        </div>
+
+        <div class="movie_card">
+            <img src="Images/nach_g_ghuma_movie_img.jpg" alt="Nach G Ghuma Movie poster" height="340px"
+                style="border-radius: 5px;" /><br />
+            <span class="movie_names">Naach Ga Ghuma</span><br />
+            <span class="movie_type">Comedy/Drama/Family</span><br />
+        </div>
+
+        <div class="movie_card">
+            <img src="Images/kingdom_planet_of_Apes_movie_img.jpg" width="240px"
+                alt="Kingdom of the planest of Apes Movie poster" height="340px" style="border-radius: 5px;" /><br />
+            <span class="movie_names">Kingdom of the planest of the<br /> </span>
+            <span class="movie_names">Apes</span><br />
+            <span class="movie_type">Action/Adventure/Sci-Fi</span><br />
+        </div>
+
+        <div class="movie_card">
+            <img src="Images/juna_furniture_movie_img.jpg" alt="Juna Furniture Movie poster" height="340px"
+                style="border-radius: 5px;" /><br />
+            <span class="movie_names">Juna Furniture</span><br />
+            <span class="movie_type">Drama/Family</span> <br />
+        </div>
+
+        <div class="movie_card">
+            <img src="Images/maidaan_movie_img.jpg" alt="Maidaan Movie poster" height="340px" /><br />
+            <span class="movie_names">Maidaan</span><br />
+            <span class="movie_type">Biography/Drama/Sports</span><br />
+        </div>
+
+    </div>
+
+</body>
+
 
 </html>
