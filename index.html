@@ -56,12 +56,85 @@
             flex-wrap: wrap;
             padding: 20px;
         }
+
+        .popular_movies_card_container {
+            background-image: linear-gradient(to top, #373e9b 0%, white 100%);
+            height: 1300px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .time_travel_movie_card_container {
+            background-image: linear-gradient(to top, #337cc4 0%, white 100%);
+            height: 700px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 4px;
+        }
+
+        .holywood_movie_card {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgb(141, 123, 123);
+            cursor: pointer;
+            height: 298px;
+            width: 900px;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .movie_details {
+            text-align: justify;
+            margin: 10px;
+            padding: 10px;
+            margin-top: 2px;
+            justify-content: space-around;
+
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+            align-items: start;
+            padding: 10px 20px;
+            border: 2px solid white;
+            font-size: 20px;
+        }
+
+        .action_movie {
+            background-color: linear-gradient(to top, #91bfec 0%, white 100%);
+            height: 300px;
+            width: 900px;
+        }
+
+        .bright_movie_card {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgb(141, 123, 123);
+            cursor: pointer;
+            height: 298px;
+            width: 900px;
+            display: flex;
+            justify-content: end;
+        }
     </style>
 </head>
 
 <body>
     <h1 style="text-align: center; color: rgb(3, 3, 73);">Recommended Movies</h1>
-    <div class="recent_movies_card_container">
+    <div class="recent_movies_card_container1">
 
         <div class="movie_card">
             <img src="Images/shrikanth_movie_img.jpg" alt="Srikanth Movie poster" height="340px"
@@ -137,8 +210,68 @@
         </div>
 
     </div>
-    <br /><br />
-    
+  
+    <div class="popular_movies_card_container">
+        <h1 style="text-align: center; color: rgb(3, 3, 73);">Time Travel HollyWood Movies </h1>
+        <div class="time_travel_movie_card_container">
+            <div class="holywood_movie_card">
+                <img src="Images/bladerunner_poster.jpg" alt="movie card1" width="600px" height="298px" />
+                <div class="movie_details">
+                    <h2>BLADE RUNNER</h2>
+                    <span style="color: rgb(17, 17, 230);">(1982) SCI-FI,THRILLER</span>
+                    <br /><br />
+                    <p style="font-size: 16px;">A blade runner must pursue and try to terminate four replicants who
+                        stole a ship
+                        in
+                        space and have returned to
+                        earth to find their creator. </p>
+                    <button class="btn">
+                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
+                        &nbsp;&nbsp;&nbsp;Watch Trailor
+                    </button>
+                </div>
+            </div>
+
+            <div class="holywood_movie_card">
+                <img src="Images/backToFuture_poster.jpg" alt="movie card1" width="600px" height="298px" />
+                <div class="movie_details">
+                    <h2>BACK TO THE FUTURE</h2>
+                    <span style="color: rgb(17, 17, 230);">(1985) ADVENTURE,COMEDY,SCI-FI,</span>
+                    <br /><br />
+                    <p style="font-size: 16px;">Marty McFly, a 17-year-old high school student, is accidentally sent 30
+                        years into
+                        the past ina time-travelling DeLorean invented by his close friend,the maverick scientist Doc
+                        Brown.</p>
+                    <button class="btn">
+                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
+                        &nbsp;&nbsp;&nbsp;Watch Trailor
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="action_movie">
+            <h1 style="text-align: center; color: rgb(3, 3, 73);">Action Movies</h1>
+            <div class="bright_movie_card">
+                <img src="Images/bright_black_img.jpg" alt="Bright movie card" width="500px" height="298px" />
+                <div class="movie_details">
+                    <h2>Bright</h2>
+                    <span style="color: rgb(17, 17, 230);">(1985) ACTION,CRIME,FATANSY</span>
+                    <br /><br />
+                    <p style="font-size: 16px;">Setin a world where fatansy creatures live side by side with humans. A
+                        human cop
+                        is
+                        forced towork with an Orc to find a weapon everyone is prepared to kill for.</p>
+                    <button class="btn">
+                        <img src="Images/play_button.png" alt="play_button_logo" width="20px" />
+                        &nbsp;&nbsp;&nbsp;Watch Trailor
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 
 </body>
